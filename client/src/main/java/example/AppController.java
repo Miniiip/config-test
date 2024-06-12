@@ -14,8 +14,24 @@ public class AppController {
     @Value("${info.foo}")
     private String fooProperty;
 
+    @Value("${dev.message}")
+    private String messageDev;
+
+    @Value("${prod.message}")
+    private String messageProd;
+
     @RequestMapping("/")
     public String hello() {
         return "Using [" + fooProperty + "] from config server";
+    }
+
+    @RequestMapping("/dev")
+    public String helloDev() {
+        return messageDev;
+    }
+
+    @RequestMapping("/prod")
+    public String helloProd() {
+        return messageProd;
     }
 }
