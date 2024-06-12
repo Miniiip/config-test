@@ -1,7 +1,7 @@
 # Config data exposed by config server
 
 info:
-  foo: test
+  foo: Ines
   someList: [3, 4, 6]
 dev:
   message: en dev
