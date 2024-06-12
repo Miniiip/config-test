@@ -28,8 +28,14 @@ public class AppController {
 
     @RequestMapping("/")
     public String hello() {
-        return "Using [" + appProperties.getFoo() + "] from config server";
+        return "On utilise [" + appProperties.getFoo() + "] depuis le config server";
     }
+
+    @RequestMapping("/someList")
+    public String someList() {
+        return "Voici la liste " + appProperties.getSomeList().toString() ;
+    }
+
 
     @RequestMapping("/dev")
     public String helloDev() {
@@ -37,7 +43,6 @@ public class AppController {
     }
 
     @RequestMapping("/prod")
-    public String helloProd() {
-        return messageProd;
-    }
+    public String helloProd() {return messageProd;}
+
 }
