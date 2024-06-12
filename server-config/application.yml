@@ -1,9 +1,9 @@
 # Config data exposed by config server
 
 info:
-  foo: test actuator
+  foo: fofofofofof
   someList: [2, 3, 7]
 dev:
-  message: en dev
+  message: en devo
 prod:
-  message: en prod
+  message: en produ
