@@ -8,3 +8,10 @@ spring:
       env: default # optional
       label: master # optional
       uri: http://localhost:8888 # optional
+      
+# afin de permettre le refresh pas l'actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
