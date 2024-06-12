@@ -11,8 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class AppController {
 
-    @Value("${info.foo}")
-    private String fooProperty;
+    private final ApplicationPropertiesConfiguration appProperties;
+
+//    @Value("${info.foo}")
+//    private String fooProperty;
 
     @Value("${dev.message}")
     private String messageDev;
@@ -20,9 +22,13 @@ public class AppController {
     @Value("${prod.message}")
     private String messageProd;
 
+    public AppController(ApplicationPropertiesConfiguration appProperties) {
+        this.appProperties = appProperties;
+    }
+
     @RequestMapping("/")
     public String hello() {
-        return "Using [" + fooProperty + "] from config server";
+        return "Using [" + appProperties.getFoo() + "] from config server";
     }
 
     @RequestMapping("/dev")
