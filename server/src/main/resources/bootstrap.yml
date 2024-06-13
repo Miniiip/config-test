@@ -12,7 +12,7 @@ spring:
           # be used because the configs would be in the root directory, but because
           # this example repo is hosting both the code and the configs, we're
           # isolating the configuration files into their own directory.
-          searchPaths: server-config, server-config-dev
+          searchPaths: server-config
 management:
   endpoints:
     web:
