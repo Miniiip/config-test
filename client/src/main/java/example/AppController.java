@@ -33,10 +33,10 @@ public class AppController {
         return "On utilise [" + appProperties.getFoo() + "] depuis le config server";
     }
 
-    @RequestMapping("/someList")
-    public String someList() {
-        return "Voici la liste " + appProperties.getSomeList().toString() ;
-    }
+//    @RequestMapping("/someList")
+//    public String someList() {
+//        return "Voici la liste " + appProperties.getSomeList().toString() ;
+//    }
 
 
 //    @RequestMapping("/dev")

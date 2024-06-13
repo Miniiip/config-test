@@ -13,7 +13,7 @@ public class ApplicationPropertiesConfiguration
 {
     private String foo;
 
-    private List<Long> someList;
+//    private List<Long> someList;
 
     public String getFoo()
     {
@@ -25,11 +25,11 @@ public class ApplicationPropertiesConfiguration
         this.foo = foo;
     }
 
-    public List<Long> getSomeList() {
-        return someList;
-    }
-
-    public void setSomeList(List<Long> someList) {
-        this.someList = someList;
-    }
+//    public List<Long> getSomeList() {
+//        return someList;
+//    }
+//
+//    public void setSomeList(List<Long> someList) {
+//        this.someList = someList;
+//    }
 }
