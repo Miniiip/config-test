@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-@ConfigurationProperties("client")
+@ConfigurationProperties(prefix="client")
 @RefreshScope
 public class ApplicationPropertiesConfiguration
 {
