@@ -1,6 +1,6 @@
 spring:
   application:
-    name: config-client-test
+    name: client
   profiles:
     active: dev,prod
   cloud:
