@@ -18,11 +18,11 @@ public class AppController {
 //    @Value("${info.foo}")
 //    private String fooProperty;
 
-    @Value("${dev.message}")
-    private String messageDev;
-
-    @Value("${prod.message}")
-    private String messageProd;
+//    @Value("${dev.message}")
+//    private String messageDev;
+//
+//    @Value("${prod.message}")
+//    private String messageProd;
 
     public AppController(ApplicationPropertiesConfiguration appProperties) {
         this.appProperties = appProperties;
@@ -39,12 +39,12 @@ public class AppController {
     }
 
 
-    @RequestMapping("/dev")
-    public String helloDev() {
-        return messageDev;
-    }
-
-    @RequestMapping("/prod")
-    public String helloProd() {return messageProd;}
+//    @RequestMapping("/dev")
+//    public String helloDev() {
+//        return messageDev;
+//    }
+//
+//    @RequestMapping("/prod")
+//    public String helloProd() {return messageProd;}
 
 }

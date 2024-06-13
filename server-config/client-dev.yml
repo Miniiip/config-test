@@ -1,9 +1,0 @@
-# Config data exposed by config server
-
-info:
-  foo: Ines
-  someList: [3, 4, 6]
-dev:
-  message: en dev
-prod:
-  message: en prod

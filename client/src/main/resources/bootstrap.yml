@@ -5,7 +5,7 @@ spring:
     active: dev,prod
   cloud:
     config:
-      env: default # optional
+      env: dev # optional
       label: master # optional
       uri: http://localhost:8888 # optional
 
