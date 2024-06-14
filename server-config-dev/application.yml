@@ -1,9 +1,0 @@
-# Config data exposed by config server
-
-info:
-  foo: vive le dev
-  someList: [3, 4, 6]
-dev:
-  message: en dev
-prod:
-  message: pas en prod
