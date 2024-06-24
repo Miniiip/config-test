@@ -5,10 +5,10 @@ spring:
   application:
     name: demo-poc
   profiles:
-    active: prod
+    active: dev
   cloud:
     config:
-      env: prod
+      #env: prod
       label: master
       uri: http://localhost:8888
 
