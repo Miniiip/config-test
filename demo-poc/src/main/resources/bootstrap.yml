@@ -1,12 +1,15 @@
+server:
+  port: 9080
+
 spring:
   application:
-    name: client
+    name: demo-poc
   profiles:
     active: prod
   cloud:
     config:
       env: prod
-      label: tag_test
+      label: main
       uri: http://localhost:8888
 
 # afin de permettre le refresh pas l'actuator
