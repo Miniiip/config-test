@@ -9,7 +9,7 @@ spring:
   cloud:
     config:
       env: prod
-      label: main
+      label: master
       uri: http://localhost:8888
 
 # afin de permettre le refresh pas l'actuator

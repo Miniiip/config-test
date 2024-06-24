@@ -18,7 +18,7 @@ public class AppController {
 
     @RequestMapping("/")
     public String hello() {
-        return "On utilise [" + appProperties.getFoo() + "] depuis le config server sur le client";
+        return "On utilise [" + appProperties.getFoo() + "] depuis le config server sur le demo-poc";
     }
 
 }
