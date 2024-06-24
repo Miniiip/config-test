@@ -2,12 +2,12 @@ spring:
   application:
     name: client
   profiles:
-    active: dev,prod
+    active: prod
   cloud:
     config:
-      env: dev # optional
-      label: master # optional
-      uri: http://localhost:8888 # optional
+      env: prod
+      label: master
+      uri: http://localhost:8888
 
 # afin de permettre le refresh pas l'actuator
 management:
