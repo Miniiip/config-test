@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8082
 
 spring:
   application:
@@ -8,8 +8,8 @@ spring:
     active: dev
   cloud:
     config:
-      #env: prod
-      label: tag-demo
+      env: dev
+      label: master
       uri: http://localhost:8888
 
 # afin de permettre le refresh pas l'actuator
