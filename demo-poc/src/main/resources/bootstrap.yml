@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 9082
 
 spring:
   application:
@@ -8,7 +8,7 @@ spring:
     active: dev
   cloud:
     config:
-      env: dev
+      #env: dev
       label: master
       uri: http://localhost:8888
 
